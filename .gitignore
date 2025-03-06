@@ -1,0 +1,32 @@
+# Dependencies
+/node_modules
+/client/node_modules
+/server/node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Environment variables - prevents uploading sensitive credentials
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+server/.env
+
+# Build files
+/client/build
+/build
+/dist
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
