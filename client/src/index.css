@@ -94,3 +94,51 @@ span {
   display: inline-block;
   width: 120px;
 }
+
+/* Form improvements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group.error input {
+  border-color: #ff3b30;
+}
+
+.error-text {
+  color: #ff3b30;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-check input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.form-check label {
+  display: inline;
+  cursor: pointer;
+}
+
+.block {
+  display: block;
+  margin-top: 5px;
+  margin-left: 24px;
+}
+
+.password-strength {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+button.btn-loading {
+  background-color: #93c995;
+  cursor: not-allowed;
+}

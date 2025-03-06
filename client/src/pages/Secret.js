@@ -8,8 +8,8 @@ function Secret() {
   const navigate = useNavigate();
   const [cookies, , removeCookie] = useCookies([]);
   const [userEmail, setUserEmail] = useState("");
+  const [firstName, setFirstName] = useState("");
   const lastLogin = new Date().toLocaleString();
-  // Add a ref to track if toast has been shown
   const toastShown = useRef(false);
 
   useEffect(() => {
@@ -28,9 +28,10 @@ function Secret() {
             navigate('/login');
           } else {
             setUserEmail(data.user);
+            setFirstName(data.firstName || '');
             // Only show toast if it hasn't been shown yet
             if (!toastShown.current) {
-              toast.success(`Welcome back, ${data.user}`, {
+              toast.success(`Welcome back, ${data.firstName || data.user}`, {
                 theme: 'dark'
               });
               toastShown.current = true;
@@ -55,9 +56,13 @@ function Secret() {
   return React.createElement(
     'div',
     { className: 'private' },
-    React.createElement('h1', null, 'Welcome to Your Dashboard'),
+    React.createElement('h1', null, `Welcome to Your Dashboard${firstName ? ', ' + firstName : ''}`),
     React.createElement('div', { className: 'user-info' },
       React.createElement('h3', null, 'User Profile'),
+      firstName && React.createElement('p', null, 
+        React.createElement('strong', null, 'Name: '), 
+        firstName
+      ),
       React.createElement('p', null, 
         React.createElement('strong', null, 'Email: '), 
         userEmail

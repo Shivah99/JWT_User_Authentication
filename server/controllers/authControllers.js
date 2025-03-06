@@ -6,7 +6,7 @@ const maxAge = config.JWT_EXPIRES_IN;
 
 // Handle errors
 const handleErrors = (err) => {
-  let errors = { email: '', password: '' };
+  let errors = { firstName: '', email: '', password: '' };
 
   // Duplicate error code
   if (err.code === 11000) {
@@ -43,8 +43,8 @@ const createToken = (id) => {
 
 module.exports.register = async (req, res, next) => {
   try {
-    const { email, password } = req.body;
-    const user = await User.create({ email, password });
+    const { firstName, email, password } = req.body;
+    const user = await User.create({ firstName, email, password });
     const token = createToken(user._id);
     
     res.cookie('jwt', token, {
