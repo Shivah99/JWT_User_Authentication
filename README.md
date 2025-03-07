@@ -19,8 +19,8 @@ A secure authentication system using JWT, MongoDB Atlas, and React - providing r
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js
-- MongoDB Atlas account
+- 🟢 Node.js
+- 🗄️ MongoDB Atlas account
 
 ### Installation
 
@@ -66,16 +66,16 @@ A secure authentication system using JWT, MongoDB Atlas, and React - providing r
 
 ## 📷 Screenshots
 
-### Registration Page
+### 📝 Registration Page
 ![Registration Page](./screenshots/register.png)
 
-### Login Page
+### 🔑 Login Page
 ![Login Page](./screenshots/login.png)
 
-### Dashboard
+### 🖥️ Dashboard
 ![Dashboard](./screenshots/dashboard.png)
 
-### MongoDB
+### 🗄️ MongoDB
 ![MongoDB](./screenshots/MongoDB.png)
 
 ## 🔒 Authentication Flow
