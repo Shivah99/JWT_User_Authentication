@@ -66,6 +66,17 @@ A secure authentication system using JWT, MongoDB Atlas, and React - providing r
 
 ## 📷 Screenshots
 
+> ℹ️ **Note:** To add screenshots of your application:
+> 1. Create a `screenshots` directory in the project root
+> 2. Take screenshots of your application's pages
+> 3. Save them as PNG files with the following naming convention:
+>    - `register.png` - Registration page
+>    - `login.png` - Login page
+>    - `dashboard.png` - Dashboard
+>    - `MongoDB.png` - MongoDB data view
+
+*The following are placeholder references. Replace with your actual screenshots.*
+
 ### 📝 Registration Page
 ![Registration Page](./screenshots/register.png)
 
@@ -120,6 +131,12 @@ mongodb_auth/
 │       ├── App.js
 │       ├── index.js
 │       └── index.css
+│
+├── screenshots/      # Directory for application screenshots
+│   ├── register.png
+│   ├── login.png
+│   ├── dashboard.png
+│   └── MongoDB.png
 │
 └── server/
     ├── config/
